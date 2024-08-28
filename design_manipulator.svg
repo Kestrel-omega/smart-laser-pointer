@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- XZ Workspace -->
+  <rect x="104" y="92" width="192" height="108" fill="none" stroke="#00f" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="200" y="84" font-size="12" fill="#00f" text-anchor="middle">Workspace: x:(-96,96), z:(0,108)mm</text>
+  
+  <!-- Base -->
+  <rect x="180" y="250" width="40" height="20" fill="#888"/>
+  <text x="200" y="290" text-anchor="middle" font-size="14">Base</text>
+  
+  <!-- First link (70mm) -->
+  <line x1="200" y1="250" x2="200" y2="180" stroke="#000" stroke-width="4"/>
+  <text x="210" y="215" font-size="12" fill="#000">70mm</text>
+  
+  <!-- First joint (J1) with rotation arrow -->
+  <circle cx="200" cy="250" r="5" fill="#f00"/>
+  <text x="210" y="255" font-size="12" fill="#f00">J1</text>
+  <path d="M 190 250 A 10 10 0 1 1 210 250" fill="none" stroke="#00f" stroke-width="2" stroke-dasharray="2,2"/>
+  <polygon points="208,248 212,250 208,252" fill="#00f"/>
+  <text x="220" y="240" font-size="10" fill="#00f">Y rotation</text>
+  
+  <!-- Second joint (J2) with rotation arrow -->
+  <circle cx="200" cy="180" r="5" fill="#f00"/>
+  <text x="210" y="180" font-size="12" fill="#f00">J2 (0,0)</text>
+  <path d="M 195 170 A 10 10 0 1 0 205 170" fill="none" stroke="#0f0" stroke-width="2"/>
+  <polygon points="203,172 207,170 203,168" fill="#0f0"/>
+  <text x="150" y="165" font-size="10" fill="#0f0">X rotation</text>
+  
+  <!-- Second link (100mm) -->
+  <line x1="200" y1="180" x2="280" y2="130" stroke="#000" stroke-width="4"/>
+  <text x="245" y="165" font-size="12" fill="#000">100mm</text>
+  
+  <!-- Third joint (J3) with rotation arrow -->
+  <circle cx="280" cy="130" r="5" fill="#f00"/>
+  <text x="300" y="140" font-size="12" fill="#f00">J3</text>
+  <path d="M 275 120 A 10 10 0 1 0 285 120" fill="none" stroke="#0f0" stroke-width="2"/>
+  <polygon points="283,122 287,120 283,118" fill="#0f0"/>
+  <text x="210" y="130" font-size="10" fill="#0f0">X rotation</text>
+  
+  <!-- Third link (50mm) with laser pointer -->
+  <line x1="280" y1="130" x2="320" y2="110" stroke="#000" stroke-width="4"/>
+  <text x="305" y="130" font-size="12" fill="#000">50mm</text>
+  <circle cx="320" cy="110" r="3" fill="#0f0"/>
+  <text x="330" y="110" font-size="12" fill="#0f0">Laser</text>
+  
+  <!-- Coordinate system -->
+  <line x1="30" y1="270" x2="100" y2="270" stroke="#888" stroke-width="2"/>
+  <line x1="30" y1="270" x2="30" y2="200" stroke="#888" stroke-width="2"/>
+  <text x="110" y="275" font-size="12" fill="#888">X</text>
+  <text x="25" y="195" font-size="12" fill="#888">Z</text>
+  <text x="20" y="260" font-size="12" fill="#888">Y (into the page)</text>
+  
+  <!-- Labels -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold">3-Axis Laser Manipulator</text>
+</svg>
